@@ -1,2 +1,2 @@
 # ahoj
-website url
+https://misak108.github.io/ahoj
