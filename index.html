@@ -3,27 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="3;url=https://www.youtube.com"> <!-- Meta tag for automatic redirect -->
-    <title>Redirecting to YouTube...</title>
+    <title>Website with Top Bar, Header, and Footer</title>
 
-    <script type="text/javascript">
-        // JavaScript redirect (will run immediately)
-        window.location.href = "https://www.youtube.com";
-    </script>
+    <!-- Basic styling for the page -->
+    <style>
+        /* Resetting margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        /* Styling for the body */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding-top: 50px; /* Adjusting for the fixed top bar */
+        }
+
+        /* Top bar that stays at the top of the screen */
+        .top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            z-index: 1000; /* Ensures the bar stays on top */
+        }
+
+        /* Header section */
+        header {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2em;
+        }
+
+        /* Main content area */
+        main {
+            padding: 20px;
+        }
+
+        /* Footer section */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Link styling */
+        a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            background-color: #444;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #666;
+        }
+    </style>
 </head>
 <body>
-    <h1>You will be redirected to YouTube!</h1>
-    <p>If you are not redirected within a few seconds, you can click the link below or use the button:</p>
 
-    <!-- Button redirect (JavaScript) -->
-    <button onclick="window.location.href='https://www.youtube.com'">Go to YouTube</button>
+    <!-- Top bar fixed at the top -->
+    <div class="top-bar">
+        <a href="https://www.youtube.com" target="_blank">Go to YouTube</a>
+    </div>
 
-    <br><br>
+    <!-- Header section -->
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>This is a simple page with a header, footer, and a fixed top bar.</p>
+    </header>
 
-    <!-- Link to YouTube -->
-    <a href="https://www.youtube.com" target="_blank">Click here to go to YouTube</a>
+    <!-- Main content -->
+    <main>
+        <h2>About This Page</h2>
+        <p>This page is designed to demonstrate the structure of a basic HTML layout with a fixed top bar, header, footer, and some content in the middle.</p>
+        <p>Feel free to scroll and interact with the page!</p>
+    </main>
 
-    <p>Redirecting in 3 seconds...</p>
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2025 My Website | All rights reserved</p>
+    </footer>
+
 </body>
 </html>
