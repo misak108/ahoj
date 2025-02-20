@@ -1,70 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rainbow Background with Centered Word and Image</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage</title>
+    <style>
+        /* Set the background color of the whole page */
+        body {
+            background-color: white;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
-  <style>
-      /* Ensure the body takes up the full height of the screen */
-      html, body {
-          height: 100%;
-          margin: 0;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-family: Arial, sans-serif;
-      }
-
-      /* Create the rainbow animation */
-      @keyframes rainbow {
-          0% { background-color: red; }
-          14% { background-color: orange; }
-          28% { background-color: yellow; }
-          42% { background-color: green; }
-          57% { background-color: blue; }
-          71% { background-color: indigo; }
-          85% { background-color: violet; }
-          100% { background-color: red; }
-      }
-
-      /* Full screen background animation */
-      body {
-          background-color: red;
-          animation: rainbow 3s linear infinite;
-          width: 100%;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: white;
-          flex-direction: column; /* Stack content vertically */
-      }
-
-      /* Style for the centered word */
-      .centered-word {
-          font-size: 5em;
-          font-weight: bold;
-          text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
-      }
-
-      /* Style for the image */
-      .image-container img {
-          max-width: 150px; /* Adjust image size */
-          height: auto;
-          margin-bottom: 20px; /* Space between image and text */
-      }
-
-  </style>
+        /* Style the top bar */
+        .top-bar {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
-  <!-- Image above the text -->
-  <div class="image-container">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW21dzsqrFQNcShqnfBLHDTKanEZjp7JRVJA&s" alt="Placeholder Image"> <!-- Replace this URL with your image URL -->
-  </div>
 
-  <!-- The centered word element -->
-  <div class="centered-word">skibidi sigma</div>
+    <!-- Top bar -->
+    <div class="top-bar">
+        This is a top bar
+    </div>
+
+    <!-- Main content goes here -->
 
 </body>
 </html>
