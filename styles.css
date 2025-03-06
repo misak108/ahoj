@@ -10,6 +10,11 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    min-height: 100vh; /* Full viewport height */
 }
 
 /* Header styles */
@@ -18,6 +23,7 @@ header {
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
+    width: 100%; /* Full width */
 }
 
 header h1 {
@@ -47,6 +53,8 @@ nav ul li a:hover {
 /* Main content styles */
 main {
     padding: 20px;
+    max-width: 800px; /* Limit the width of the main content */
+    text-align: center; /* Center text */
 }
 
 section {
