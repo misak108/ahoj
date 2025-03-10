@@ -6,6 +6,63 @@
     <title>Cestování po Evropě</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #35424a;
+        }
+        .destination-list, .travel-tips {
+            margin: 20px 0;
+            padding: 10px;
+            background: #e2e2e2;
+            border-radius: 5px;
+        }
+        .destination-list ul, .travel-tips ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #35424a;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -24,7 +81,7 @@
             <p>Na našich stránkách najdete tipy na nejlepší evropské destinace.</p>
         </section>
 
-        <section>
+        <section class="destination-list">
             <h2>Nejlepší destinace</h2>
             <ul>
                 <li><strong>Paříž, Francie</strong> - Město lásky, známé svými ikonickými památkami jako Eiffelova věž a Louvre.</li>
@@ -35,7 +92,7 @@
             </ul>
         </section>
 
-        <section>
+        <section class="travel-tips">
             <h2>Cestovatelské tipy</h2>
             <p>Chystáte se na cestu? Zde je několik užitečných tipů:</p>
             <ol>
@@ -45,20 +102,4 @@
                 <li>Nezapomeňte na cestovní pojištění.</li>
                 <li>Respektujte místní zvyky a tradice.</li>
             </ol>
-        </section>
-
-        <section>
-            <h2>Připojte se k nám!</h2>
-            <p>Chcete se dozvědět více o cestování po Evropě? Přihlaste se k našemu newsletteru a získejte nejnovější tipy a triky přímo do vaší schránky!</p>
-            <form action="#" method="post">
-                <label for="email">Váš e-mail:</label>
-                <input type="email" id="email" name="email" required>
-                <button type="submit">Přihlásit se</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Cestování. Všechna práva vyhrazena.</p>
-    </footer>
-</body>
-</html>
+        </
