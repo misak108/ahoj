@@ -1,163 +1,85 @@
-<!DOCTYPE html>
-<html lang="cs">
+<<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cestování po Evropě</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="https://www.favicon.cc/logo3d/1016002.png" type="image/png">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #35424a;
-            color: #ffffff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #ffffff;
-            text-decoration: none;
-        }
-        main {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-            background: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #35424a;
-        }
-        section {
-            margin: 20px 0;
-        }
-        .top-experiences, .planning-tips, .interactive-map, .blog-highlights, .travel-checklist, .featured-events, .safety-health-tips {
-            padding: 10px;
-            background: #e2e2e2;
-            border-radius: 5px;
-        }
-        .top-experiences ul, .planning-tips ul, .travel-checklist ul, .featured-events ul, .safety-health-tips ul {
-            margin: 0;
-            padding-left: 0;
-            list-style-type: none; 
-        }
-        .blog-highlights ul {
-            list-style-type: none;  
-            padding-left: 0;       
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background: #35424a;
-            color: #ffffff;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fresh Bites - The best fast food in town!">
+  <title>Fresh Bites</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Cestování po Evropě</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Domů</a></li>
-                <li><a href="about.html">O nás</a></li>
-                <li><a href="destination.html">Destinace</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Objevte krásy Evropy</h2>
-            <p>Na našich stránkách najdete tipy na nejlepší evropské destinace.</p>
-        </section>
-</body>
-</html>
+  <!-- Navbar -->
+  <header>
+    <div class="logo">
+      <h1>Fresh Bites</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h2>Welcome to Fresh Bites!</h2>
+    <p>Fresh, delicious, and fast food made just for you.</p>
+    <button onclick="scrollToMenu()">View Menu</button>
+  </section>
 
-        <section class="top-experiences">
-            <h2>Nejlepší cestovatelské zážitky v Evropě</h2>
-            <ul>
-                <li><strong>Prozkoumejte historické památky</strong> - Navštivte ikonické památky jako Koloseum, Akropolis a Eiffelovu věž.</li>
-                <li><strong>Relaxujte na středomořských plážích</strong> - Užijte si slunce a písek na místech jako Řecké ostrovy, Amalfi Coast a Francouzská riviéra.</li>
-                <li><strong>Objevujte evropskou kulturu</strong> - Zažijte místní festivaly, kuchyni a tradiční zvyky.</li>
-                <li><strong>Dobrodružství v Alpách</strong> - Lyžujte, choďte po horách a objevujte dechberoucí horské krajiny v zemích jako Švýcarsko, Rakousko a Francie.</li>
-                <li><strong>Plavba po evropských řekách</strong> - Vydejte se na malebnou plavbu po řekách v zemích jako Německo, Maďarsko a Nizozemsko.</li>
-            </ul>
-            </section>
+  <!-- Menu Section -->
+  <section id="menu" class="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+      <div class="item">
+        <img src="burger.jpg" alt="Burger">
+        <h3>Classic Burger</h3>
+        <p>$5.99</p>
+      </div>
+      <div class="item">
+        <img src="fries.jpg" alt="Fries">
+        <h3>Golden Fries</h3>
+        <p>$2.99</p>
+      </div>
+      <div class="item">
+        <img src="drink.jpg" alt="Drink">
+        <h3>Soft Drink</h3>
+        <p>$1.50</p>
+      </div>
+    </div>
+  </section>
 
-            <section class="planning-tips">
-                <h2>Tipy na plánování cesty</h2>
-                <p>Plánujete cestu do Evropy? Zde je několik tipů, které vám pomohou maximálně využít vaše dobrodružství:</p>
-                <ul>
-                    <li><strong>Nejlepší doba pro návštěvu:</strong> Nejlepší doba pro cestování do Evropy je na jaře (duben až červen) a na podzim (září až listopad), kdy je příjemné počasí a méně turistů.</li>
-                    <li><strong>Levné cestování:</strong> Využijte nízkonákladové letecké společnosti, vlaky a autobusy pro levnou dopravu. Zvažte cestování mimo sezónu pro nižší ceny.</li>
-                    <li><strong>Rezervace ubytování:</strong> Ať už hledáte hotely, hostely nebo pronájmy, rezervace předem vám může pomoci zajistit nejlepší nabídky.</li>
-                    <li><strong>Tipy na jazyk:</strong> Naučte se základní fráze v místním jazyce, abyste vylepšili svůj cestovatelský zážitek. Přátelské "ahoj" nebo "děkuji" udělá velký dojem!</li>
-                </ul>
-            </section>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>At Fresh Bites, we believe in quality, fresh ingredients and fast service. Come grab a bite, and taste the difference!</p>
+  </section>
 
-            <section class="blog-highlights">
-                <h2>Z našeho blogu</h2>
-                <p>Buďte v obraze s nejnovějšími cestovatelskými příběhy, tipy a průvodci z celé Evropy.</p>
-                <ul>
-                    <li><a href="blog-post1.html"><strong>10 skrytých klenotů východní Evropy</strong> - Objevte méně navštěvované destinace plné kouzla a historie.</a></li>
-                    <li><a href="blog-post2.html"><strong>Průvodce pro milovníky jídla po Itálii</strong> - Objevte nejlepší jídla a restaurace v Římě, Florencii a dalších městech.</a></li>
-                    <li><a href="blog-post3.html"><strong>Jak cestovat po Evropě s rozpočtem</strong> - Tipy na prozkoumání Evropy bez zruinování rozpočtu.</a></li>
-                </ul>
-            </section>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form action="submit_form.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
 
-            <section class="travel-checklist">
-                <h2>Váš nezbytný cestovní seznam</h2>
-                <p>Připravte se na své evropské dobrodružství s naším nezbytným seznamem. Ujistěte se, že máte vše, co potřebujete pro bezstarostnou cestu!</p>
-                <ul>
-                    <li>Pas a cestovní pojištění</li>
-                    <li>Místní měna a kreditní karty</li>
-                    <li>Cestovní adaptéry pro elektroniku</li>
-                    <li>Pohodlné boty na chůzi</li>
-                    <li>Průvodci nebo mapy pro navigaci</li>
-                </ul>
-                <p><a href="checklist.pdf" download>Stáhněte si celý seznam</a></p>
-            </section>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
 
-            <section class="featured-events">
-                <h2>Nadcházející akce v Evropě</h2>
-                <ul>
-                    <li><strong>Oktoberfest, Mnichov</strong> - 20. září - 5. října 2025. Užijte si největší pivní festival na světě s množstvím jídla, hudby a zábavy!</li>
-                    <li><strong>Benátský karneval, Itálie</strong> - 7. - 25. února 2025. Zažijte nejznámější italský festival s propracovanými maskami a kostýmy.</li>
-                    <li><strong>La Tomatina, Španělsko</strong> - 27. srpna 2025. Připojte se k největší rajčatové bitvě na světě na ulicích Buñolu.</li>
-                </ul>
-            </section>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
 
-            <section class="safety-health-tips">
-                <h2>Tipy na bezpečnost a zdraví při cestování</h2>
-                <p>Vaše bezpečnost a zdraví jsou pro nás prioritou. Zde je několik základních tipů, které byste měli mít na paměti při cestování po Evropě:</p>
-                <ul>
-                    <li><strong>Zdravotní pojištění:</strong> Ujistěte se, že máte cestovní pojištění, které pokrývá lékařské pohotovosti.</li>
-                    <li><strong>Nouzová čísla:</strong> Znáte nouzová čísla pro země, které navštěvujete (112 je celoevropské nouzové číslo).</li>
-                    <li><strong>Lokální zákony a zvyky:</strong> Buďte si vědomi místních předpisů a zvyků, abyste se vyhnuli nedorozuměním.</li>
-                </ul>
-            </section>
-    </main>
-    <footer>
-        <p>Pouze pro studejní účely.</p>
-    </footer>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Fresh Bites | All Rights Reserved</p>
+  </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
