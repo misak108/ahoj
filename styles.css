@@ -1,103 +1,116 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f8f8f8;
-  }
-  
-  header {
-    background-color: #4fff4f;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  header nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  header nav ul li {
-    display: inline;
-    margin: 0 15px;
-  }
-  
-  header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  .hero {
-    background: url('hero.jpg') no-repeat center center;
-    background-size: cover;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-  }
-  
-  .hero h2 {
-    font-size: 3rem;
-    margin: 0;
-  }
-  
-  .hero p {
-    font-size: 1.5rem;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #4fff4f;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #4fff4f;
-  }
-  
-  .menu {
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  .menu-items {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .item {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  .item img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-  
-  .item h3 {
-    font-size: 1.5rem;
-  }
-  
-  .about, .contact {
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  color: black; /* Set text color to black */
+}
+
+header {
+  background-color: #82f76b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.hero {
+  background: url('hero.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #82f76b;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #82f76b;
+}
+
+.menu {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.item h3 {
+  font-size: 1.5rem;
+}
+
+.about, .contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Specific Element Text Color */
+h1, h2, h3, p {
+  color: black; /* Ensure headings and paragraphs are also black */
+}
+
+a {
+  color: black; /* Make links black */
+}
+
+a:hover {
+  color: #82f76b; /* Optional: Change link color when hovered */
+}
